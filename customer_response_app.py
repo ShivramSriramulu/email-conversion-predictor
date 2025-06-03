@@ -111,4 +111,7 @@ st.pyplot(fig_roc)
 cm = confusion_matrix(y_all, y_pred)
 fig_cm, ax = plt.subplots()
 sns.heatmap(cm, annot=True, fmt="d", cmap="Blues", ax=ax)
-ax.set_title("
+ax.set_title("Confusion Matrix")
+ax.set_xlabel("Predicted")
+ax.set_ylabel("Actual")
+st.pyplot(fig_cm)
